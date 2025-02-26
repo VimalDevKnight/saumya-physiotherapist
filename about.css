@@ -1,0 +1,355 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E0F7FA; /* Soft Medical Theme */
+    color: #2D3748; /* Primary Text Color */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #00897B;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link.active::after {
+    width: 100%;
+  }
+  
+  
+  .navbar {
+      background: #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px 40px;
+  }
+  .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+  }
+  .navbar-nav .nav-link {
+      font-size: 18px;
+      font-weight: 500;
+      color: #2D3748;
+      transition: color 0.3s;
+  }
+  .navbar-nav .nav-link:hover, .nav-link.active {
+      color: #009688;
+      border-bottom: 2px solid #009688;
+  }
+  .btn-primary {
+      background: #009688;
+      border: none;
+  }
+  .btn-primary:hover {
+      background: #00796B;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    margin-top: 40px;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(to bottom, #E0F7FA, #FFFFFF);
+  }
+  
+  .hero-section h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #2D3748;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section h2 {
+    font-size: 24px;
+    font-style: italic;
+    color: #009688;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #2D3748;
+  }
+  
+  .hero-section img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+  
+  .hero-button {
+    margin-top: 20px;
+    background-color: #009688 !important;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #00796B !important;
+  }
+  
+  
+  /* General Section */
+.my-journey {
+    padding: 60px 20px;
+    background-color: #E0F7FA; /* Soft Medical Theme */
+    text-align: center;
+}
+
+/* Title */
+.journey-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2D3748;
+    margin-bottom: 40px;
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Timeline Item */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: left;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+/* Alternating effect */
+.timeline-item:nth-child(even) {
+    transform: translateX(50px);
+}
+
+/* Timeline Icon */
+.timeline-icon {
+    background-color: #009688;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+/* Content */
+.timeline-content h3 {
+    font-size: 22px;
+    color: #009688;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    font-size: 18px;
+    color: #2D3748;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .timeline-item {
+        width: 90%;
+    }
+    .hero-section {
+      margin-top: 150px;
+    }
+    .hero-section h1 {
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .hero-section h2 {
+      padding: 10px;
+    }
+    .hero-section p{
+      padding: 20px;
+    }
+    .my-journey {
+      margin-top: 70px;
+      margin-left: 20px;
+    }
+    .expertise-card {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 30px;
+    }
+    .testimonials {
+      margin-left: 35px;
+    }
+    .contact {
+      margin-left: 40px;
+    }
+    
+}
+
+
+
+  
+
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #2D3748;
+    margin-bottom: 30px;
+}
+
+/* Expertise Section */
+.expertise {
+    background-color: #E0F7FA;
+    padding: 60px 20px;
+}
+
+.expertise-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.expertise-card:hover {
+    transform: scale(1.05);
+}
+
+.expertise-card .material-icons {
+    font-size: 40px;
+    color: #009688;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.testimonial-card {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(to right, #E3F2FD, #BBDEFB); /* Light Blue Gradient */
+    border-radius: 10px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #009688;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0077B6;
+    font-size: 36px;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.2);
+    color: #005A8D;
+}
+
+/* Footer */
+.footer {
+    height: 80px;
+    background-color: #009688; /* Medical Green */
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-icons a {
+    color: #FFFFFF;
+    font-size: 24px;
+    transition: 0.3s ease;
+  }
+  
+  .footer-icons a:hover {
+    color: #E0F2F1; /* Lightened green on hover */
+  }
+  

@@ -1,0 +1,462 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E0F7FA;
+    color: #2D3748;
+}
+
+/* navbar */
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #00897B;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link.active::after {
+    width: 100%;
+  }
+  
+  
+  .navbar {
+      background: #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px 40px;
+  }
+  .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+  }
+  .navbar-nav .nav-link {
+      font-size: 18px;
+      font-weight: 500;
+      color: #2D3748;
+      transition: color 0.3s;
+  }
+  .navbar-nav .nav-link:hover, .nav-link.active {
+      color: #009688;
+      border-bottom: 2px solid #009688;
+  }
+  .btn-primary {
+      background: #009688;
+      border: none;
+  }
+  .btn-primary:hover {
+      background: #00796B;
+  }
+
+/* Hero Section */
+
+.hero {
+    width: 100vw;
+    margin-top: 60px;
+    height: 80vh;
+    background: linear-gradient(to right, #E0F7FA, #FFFFFF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #2D3748;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-style: italic;
+    color: #009688;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+
+/* Hero Content (Text Section) */
+.hero-content {
+    max-width: 50%;
+    text-align: left;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+/* Hero Image */
+.hero-image {
+    margin-top: 80px;
+
+    max-width: 40%;
+    height: auto;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .hero-image {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+}
+
+/* Animation */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Button */
+.book-btn {
+    text-decoration: none;
+    background-color: #009688;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-button:hover {
+    background-color: #00796B;
+    transform: scale(1.05);
+}
+
+/* Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* Work Availability Section */
+.work-availability {
+    width: 100vw;
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #E0F7FA;
+}
+
+.work-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2D3748;
+    margin-bottom: 20px;
+}
+
+.schedule {
+    font-size: 20px;
+    font-weight: 500;
+    color: #009688;
+    margin-bottom: 40px;
+}
+
+/* Form */
+.hiring-form {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hiring-form input,
+.hiring-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.hiring-form button {
+    width: 100%;
+    padding: 12px;
+    background: #009688;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hiring-form button:hover {
+    background: #00796B;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hiring-form {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+
+/* Skills & Experience Section */
+.skills-experience {
+    width: 100vw;
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.skills-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2D3748;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    font-size: 20px;
+    font-weight: 500;
+    color: #009688;
+    margin-bottom: 40px;
+}
+
+/* Skills Cards */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-card {
+    perspective: 1000px;
+}
+
+.skill-card-inner {
+    width: 100%;
+    height: 180px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.skill-card:hover .skill-card-inner {
+    transform: rotateY(180deg);
+}
+
+.skill-card-front, .skill-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Front Side */
+.skill-card-front {
+    background: #009688;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Back Side */
+.skill-card-back {
+    background: #2D3748;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    transform: rotateY(180deg);
+}
+
+/* Responsive Grid */
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Contact Section */
+.contact-section {
+    width: 100vw;
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #f5f9ff;
+}
+
+.contact-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2D3748;
+    margin-bottom: 30px;
+}
+
+/* Buttons Container */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Common Button Styles */
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    background-color: #25D366;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+/* Email Button */
+.email-btn {
+    background-color: #0077B6;
+}
+
+.email-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 12px rgba(0, 119, 182, 0.4);
+}
+
+/* Button Icon */
+.contact-btn i {
+    font-size: 22px;
+}
+
+
+/* Footer */
+.footer {
+    height: 80px;
+    background-color: #009688; /* Medical Green */
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-icons a {
+    color: #FFFFFF;
+    font-size: 24px;
+    transition: 0.3s ease;
+  }
+  
+  .footer-icons a:hover {
+    color: #E0F2F1; /* Lightened green on hover */
+  }

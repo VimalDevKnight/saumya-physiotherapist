@@ -1,0 +1,209 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 1️⃣ Intro Section */
+.testimonials-header {
+    margin: 40px 0;
+    margin-top: 110px;
+    text-align: center;
+}
+
+.testimonials-header h1 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.testimonials-header p {
+    font-size: 18px;
+    color: #555555;
+}
+
+.underline {
+    width: 80px;
+    height: 4px;
+    background-color: #00897B;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* 2️⃣ Testimonial Grid */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.testimonial-card {
+    display: flex;
+    align-items: center;
+    background: #F8F9FA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.testimonial-content {
+    text-align: left;
+}
+
+.testimonial-content h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.condition {
+    font-size: 14px;
+    color: #00897B;
+    font-weight: 600;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 16px;
+}
+
+.feedback {
+    font-size: 14px;
+    color: #555555;
+    margin-top: 5px;
+}
+
+/* 3️⃣ Call-to-Action */
+.cta-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #00897B;
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #007168;
+}
+
+
+
+/* navbar */
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #00897B;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link.active::after {
+    width: 100%;
+  }
+  
+  
+  .navbar {
+      background: #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px 40px;
+  }
+  .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+  }
+  .navbar-nav .nav-link {
+      font-size: 18px;
+      font-weight: 500;
+      color: #2D3748;
+      transition: color 0.3s;
+  }
+  .navbar-nav .nav-link:hover, .nav-link.active {
+      color: #009688;
+      border-bottom: 2px solid #009688;
+  }
+  .btn-primary {
+      background: #009688;
+      border: none;
+  }
+  .btn-primary:hover {
+      background: #00796B;
+  }
+
+
+
+
+
+
+/* footer section  */
+.footer {
+    height: 80px;
+    background-color: #009688; /* Medical Green */
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-icons a {
+    color: #FFFFFF;
+    font-size: 24px;
+    transition: 0.3s ease;
+  }
+  
+  .footer-icons a:hover {
+    color: #E0F2F1; /* Lightened green on hover */
+  }
+  
